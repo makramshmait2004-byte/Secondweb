@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --burg-deep: #2E0A18;
+  --burg-dark: #4A1228;
+  --burg: #7B1D3A;
+  --burg-mid: #9B2D4E;
+  --gold: #C9A84C;
+  --gold-light: #E2C97E;
+  --gold-pale: #F5EDD0;
+  --cream: #FAF6EF;
+  --white: #FFFFFF;
+  --text-dark: #1A0810;
+  --text-mid: #5C3047;
+  --text-muted: #9C7080;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+  --font-arabic: 'Noto Naskh Arabic', serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--text-dark);
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { display: block; max-width: 100%; }
+button { cursor: pointer; font-family: var(--font-body); background: none; border: none; }
+
+.arabic { font-family: var(--font-arabic); direction: rtl; }
+
+.section-label {
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 4vw, 56px);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--burg-deep);
+}
+
+.section-title em { font-style: italic; color: var(--burg); }
+
+.btn-gold {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--burg-deep);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  border: 1px solid rgba(201,168,76,0.45);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+.btn-outline:hover { border-color: var(--gold); background: rgba(201,168,76,0.06); }
+
+/* ── MOBILE GLOBAL ── */
+@media (max-width: 768px) {
+  body { font-size: 13px; }
+
+  .btn-gold { padding: 14px 28px; font-size: 9px; }
+  .btn-outline { padding: 13px 28px; font-size: 9px; }
+}

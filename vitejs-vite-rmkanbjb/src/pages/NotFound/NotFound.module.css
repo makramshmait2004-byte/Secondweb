@@ -1,0 +1,126 @@
+.page {
+  min-height: 100vh;
+  background: #2E0A18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(201,168,76,0.03) 0,
+    rgba(201,168,76,0.03) 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 20px 20px;
+}
+
+.content { text-align: center; max-width: 500px; }
+
+.number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(100px, 20vw, 180px);
+  font-weight: 300;
+  color: rgba(201,168,76,0.15);
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -4px;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background: rgba(201,168,76,0.3);
+  margin: 0 auto 24px;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 300;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+.title em { font-style: italic; color: #E2C97E; }
+
+.desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  letter-spacing: 0.3px;
+}
+
+.countdown {
+  font-size: 11px;
+  color: rgba(201,168,76,0.5);
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.countdown span {
+  color: #C9A84C;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btnGold {
+  background: #C9A84C;
+  color: #2E0A18;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px 36px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: background 0.2s;
+}
+.btnGold:hover { background: #E2C97E; }
+
+.btnOutline {
+  background: transparent;
+  color: #C9A84C;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 15px 36px;
+  border: 1px solid rgba(201,168,76,0.4);
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.2s;
+}
+.btnOutline:hover { border-color: #C9A84C; background: rgba(201,168,76,0.06); }
+
+.links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.links span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  cursor: pointer;
+  transition: color 0.2s;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+.links span:hover {
+  color: #C9A84C;
+  border-bottom-color: rgba(201,168,76,0.3);
+}
